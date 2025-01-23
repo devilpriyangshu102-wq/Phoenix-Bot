@@ -23,15 +23,15 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Verify repository files
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "List of files:"
+          ls -al
+
       - name: Install dependencies
         run: npm install --legacy-peer-deps
-
-      - name: Verify Files
-        run: |
-          echo "Current working directory:"
-          pwd
-          echo "Files in the repository:"
-          ls -al
 
       - name: Start application
         run: npm start
