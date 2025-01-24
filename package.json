@@ -1,9 +1,14 @@
 {
-    "name": "Phoenix-MD",
-    "version": "0.0.1",
-    "description": "A Simple But Advanced WhatsApp Bot!",
-    "main": "index.js",
-    "type": "commonjs",
+  "name": "Phoenix-bot-md",
+  "version": "1.0.0",
+  "main": "index.js", 
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.6"
+  }
+},
     "scripts": {
         "start": "pm2 start . --attach --name Phoenix-MD",
         "stop": "pm2 stop Phoenix-MD"
